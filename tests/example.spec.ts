@@ -5,7 +5,7 @@ let firstWindow: Page;
 let context: BrowserContext;
 
 test('electron test1', async () => {
-  electronApp = await electron.launch({ executablePath: "C:\\Users\\aravi\\AppData\\Local\\Postman\\app-10.21.0\\Postman.exe" });
+  electronApp = await electron.launch({ executablePath: "C:\\Users\\aravind\\AppData\\Local\\Postman\\app-10.21.0\\Postman.exe" });
   context = electronApp.context();
   await context.tracing.start({ screenshots: true, snapshots: true });
   firstWindow = await electronApp.firstWindow();
